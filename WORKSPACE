@@ -109,5 +109,7 @@ new_local_repository(
 new_local_repository(
     name = "python_system",
     build_file = "python.BUILD",
-    path = "/usr",
+    # path = "/usr",
+    # Note(xin): should be root path of `which python`
+    path='/opt/conda',
 )
